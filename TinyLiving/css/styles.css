@@ -1,0 +1,603 @@
+@font-face {
+    font-family: 'Tofinobold';
+    src: url('Tofino-BoldPersonal.woff') format('woff'),
+         url('Tofino-BoldPersonal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tofinomed';
+    src: url('Tofino-MediumPersonal.woff')format('woff'),
+         url('Tofino-MediumPersonal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --gunmetal: #252d2b;
+    --mid-grey: #7e8482;
+    --asparagus: #629045;
+    --evergreen: #165022;
+    --saffron: #da6a00;
+    --bkd:#252d2b;
+}
+
+/*HEADER*/
+header{
+    background-color: #252d2b;  
+      font-weight: 300;
+
+}
+.flex-container h1 a{ 
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+header a{
+    color: var(--asparagus);
+    font-size: 1.125rem;
+    text-decoration: none;   
+    text-align: right;
+    font-weight: 600;
+    font-family: TofinoMed,sans-serif;
+}
+h1 a{
+    font-size: 1.5rem;
+}
+header ul{
+    list-style: none;
+}
+.main-menu{
+    text-align: right;
+    margin-right: 1rem;
+}
+.submenu li{
+padding-bottom: 0.5rem;
+}
+
+.main-menu li:last-child{
+    padding-bottom: 2rem;
+}
+.submenu li:first-child{
+    padding-top: 1em;
+}
+
+.menu-icon svg{
+    width: 2.5rem;
+    color: white;
+}
+.menu svg path { fill: #fff;}
+
+.menu-icon svg:hover{
+    color: #da6a00;
+    cursor: pointer;
+}
+.first-link label svg{
+    width:2rem;
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:focus-within,
+.main-menu a:active{
+    color: var(--saffron);
+}
+h1 a:hover{
+    color: var(--saffron);
+}
+.flex-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+ul.main-menu li:focus-within>.submenu,
+ul.main-menu li > .submenu:focus{
+      visibility: visible;
+      opacity: 1;
+      overflow: visible;
+      max-height: unset;
+}
+nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+}
+.show-nav{
+    max-height: 100vh;
+}
+
+
+/*TINY LIVING*/
+.living
+{
+    background-color: var(--mid-grey);
+    margin-top: 5rem;
+}
+
+.living
+{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading
+{
+    width: 19rem;
+    line-height:6rem;
+    margin: auto;
+    margin-top: 2rem ;
+    margin-bottom: 2rem ;
+
+}
+.tiny
+{
+    color: #165022;
+    text-align: left;
+}
+.livingt
+{
+    color: black;
+    text-align: right;
+}
+.heading div h1{
+    font-size: 90px;
+    font-weight: bold;
+    font-family: Tofinobold,sans-serif;
+    width: 100%;
+}
+.tinytext
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tinytext p{
+    margin: 1rem 0rem;
+    font-family: Tofinomed,sans-serif;
+}
+.tinyimage img{
+    margin: auto;
+    max-width:400px;
+    width: 100%;
+}
+
+.button{
+    background-color: var(--gunmetal);
+    width: 9rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+}
+.btn{
+    align-self: flex-end;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+    display: block; 
+}
+.button:hover{
+    background-color: var(--saffron);
+}
+
+#a { order: 1; }
+#b { order: 3; }
+#c { order: 2; }
+
+
+/*GOING GREEN*/
+.green{
+    margin-top: 4rem;
+    padding: 1rem;
+    max-width: 87.5rem;
+    margin: auto;
+}
+.going
+{
+    text-align: left;
+}
+.greent
+{
+    color: var(--asparagus);
+    text-align: right;
+}
+.photo-container {
+    height: calc(15rem + 35vw);
+    max-height: 15rem;
+    max-width: 20rem;
+    margin: auto;
+    position: relative;
+}
+
+.photo-container img {
+    position: relative;
+}
+
+.photo-container img:first-of-type {
+    top: 2rem;
+    right: -20%;}
+.photo-container img:last-of-type {
+    left: -20%;
+    bottom: 1rem;
+}
+
+/*RECENT*/
+.articles
+{
+    margin-top: 15rem;
+    padding: 0.5rem;
+}
+.articles h1{
+    font-size: 5rem;
+    line-height: 4rem;
+    font-family: Tofinobold;
+    color: var(--gunmetal);
+    text-align: center;
+}
+.recent-heading
+{
+    position: relative;
+}
+.articles svg{
+    width: 2.75rem;
+    fill: #da6a00;
+    position: absolute;
+    top: -1rem;
+    left: 6.7rem;
+}
+.flex-containerb
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.flex-containerb div{
+    text-align: center;
+}
+
+.flex-containerb div img 
+{
+    margin: auto;
+    padding: 1rem;
+}
+.flex-containerb div h2{
+    font-family:Tofinomed;
+    color: var(--asparagus);
+    padding: 0.5rem;
+}
+.flex-containerb div p{
+    font-family:Tofinomed;
+    text-align: left;
+    padding: 1rem 0 0.5rem 0;
+    font-weight: 100;
+}
+.find 
+{
+    color: var(--mid-grey);
+    text-decoration: underline;
+}
+.find:hover{
+    color: var(--saffron);
+    cursor: pointer;
+}
+.img-bkd
+{
+    background-color: var(--bkd);
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/*FUTURE*/
+
+
+.future-flex{
+    background-color: var(--bkd);
+    padding: 1.5rem; 
+    display: flex;
+    flex-direction: column; 
+    margin-top: 2rem;
+}
+.future div h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: Tofinobold;
+    color:white;
+    text-align: center;
+    text-align: right;
+    padding: 1rem 0;
+}
+.future div p{
+    color: white;
+    font-family: tofinomed;
+    font-weight: 100;
+    padding: 0.75rem 0;
+}
+
+.discover
+{
+    background-color: var(--asparagus);
+    width: 12rem;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+    align-self: flex-end;
+
+}
+.discover:hover
+{
+    background-color: var(--saffron);
+    cursor: pointer;
+}
+.greentext
+{
+    color: var(--asparagus);
+}
+/*FOOTER*/
+footer{
+    background-color: var(--bkd);
+}
+footer section{
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerli a 
+{
+    color: white;
+    text-decoration: none;
+    font-family: Tofinomed;
+}
+.footerli a:hover{
+    color: var(--saffron);
+}
+footer div ul
+{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+.socials svg{
+    width: 2rem;
+    fill: var(--mid-grey);
+    margin-right: 1rem;
+}
+footer section{
+    max-width: 87.5rem;
+}
+.footerli li:first-child
+{
+    margin-bottom: 1rem;
+}
+.footerli li:nth-child(1) a
+{
+    font-family: tofinobold; 
+    font-size: 1.1rem;   
+}
+.footersvg{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    width: calc(100%/2 - 0rem);
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:680px){
+
+
+    .living 
+    {
+        position: relative;
+    }
+    .tinyimage
+    {
+        position: absolute;
+    }
+    .tinyimage img{
+        width: 409px;
+        height: 613px;
+    }
+   
+    .flex-containerb
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .flex-containerb div
+    {
+        width: calc(100%/2 - 1rem);
+        margin: auto;
+        margin-top: 1rem;
+
+    }
+    .img-bkd
+    {
+        min-width: 100%;
+    }
+
+    footer div{
+        width: calc(100%/4 - 0.5rem);
+        margin-left: 0;
+    }
+    .socials{
+        align-items: center;
+    }
+    
+    .future-div
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        
+    }
+    .future-flex{
+        padding-right: 8rem; 
+        margin-left: 2rem;
+        margin-top: 2rem;
+
+    }
+    div.future-flex h1{
+        font-size: 4rem;
+        line-height: normal;
+    }
+    .future-img
+    {
+        position: relative;
+        right: 7%;
+    }
+}
+
+@media screen and (min-width:940px)
+{
+    /*HEADER*/
+    div.flex-container h1
+    {
+        padding-bottom: 0;
+        width: 18rem;
+    }
+    
+    header a{
+        color: white;
+        font-weight: 200;
+        font-family: sans-serif;
+    }
+    h1 a{
+        font-weight:600;
+    }
+    .inner-container
+    {
+        display: flex;
+        justify-content: space-between;
+        margin:auto;
+        max-width: 87.5rem;
+        align-items: center;
+    }
+   
+
+    .main-menu{
+        display: flex;
+        align-items: center;
+    }
+    .first-link
+    {
+        margin-left: 1.5em;
+    }
+    .first-link label svg
+    {
+        visibility: visible;
+        display:inline-block;
+        position: relative;
+        width: 1.5rem;
+        color: white;
+    }
+   .menu-icon svg
+    {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .main-menu li:last-child{
+        padding-bottom: 0rem;
+        margin-right: 0;
+    }
+    ul.main-menu li{
+        flex: 1 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        position: relative;
+    }
+    nav {
+        max-height: unset;
+        overflow: visible;
+        white-space: nowrap;
+    }
+    ul.submenu{
+        background-color: #252d2b;  
+        position: absolute;
+        left: 0;
+        border-radius: 0 0 5px 5px;
+        min-width: 100px;
+        width: auto;
+        visibility: hidden;
+        opacity: 0; 
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding: 0.5rem;
+    }
+    .submenu li{
+        padding-bottom: 0.5rem;
+    }
+    ul.main-menu > li:hover ul.submenu,
+    ul.main-menu > li ul.submenu:hover{
+        visibility: visible;
+        display: block;
+        opacity: 1;
+        width: 100%;
+    }
+    ul.main-menu li:focus-within>ul,
+    ul.main-menu li > ul:focus{
+        visibility: visible;
+        opacity: 1;
+        display: inline-block;
+    }
+
+    .articles
+    {
+        max-width: 87.5rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 15rem;
+
+    }
+    .flex-containerb div
+    {
+        width: calc(100%/4 - 1rem);
+        margin: auto;
+        margin-top: 1rem;
+        display: block;
+        max-width: 16rem;
+    }
+    .future div,.living
+    {
+        max-width: 87.5rem;
+        margin: auto;
+    }
+    footer section
+    {
+        max-width: 87.5rem;
+        margin: auto;
+    }
+    div.future-flex
+    {
+        padding: 3rem 10rem 1rem 8rem;
+        margin-bottom: 2rem; 
+        margin-left: 2rem;
+        margin-top: 2rem;
+
+    }
+    div.future-flex h1{
+        font-size: 6rem;
+        line-height: normal;
+    }
+   
+    
+}
+
+
+
